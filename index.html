@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClearTape — beginner desk against rugs, honeypots, and paid callers</title>
+  <meta name="description" content="Free public website that teaches beginners how to vet crypto tokens and Twitter callers before they lose money. No wallet connect. No signals. No paid group." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><b>CLEARTAPE</b><span>PUBLIC DESK</span></a>
+      <nav>
+        <a class="n" href="#desk">Scanner</a>
+        <a class="n" href="#fails">Instant fails</a>
+        <a class="n" href="#callers">Callers</a>
+        <a class="n" href="#tools">Tools</a>
+        <a class="n" href="#check">Checklist</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">FREE · NO WALLET · NO SIGNALS · NO TELEGRAM FUNNEL</div>
+        <h1>Check the tape before you ape.</h1>
+        <p class="lede">ClearTape is a public beginner desk. It exists so people stop buying a ticker because a promotional account posted it. Most early calls are late ads. Most new tokens die from rugs, honeypots, insider dumps, or paid amplification — not from the market.</p>
+        <div class="grid-3">
+          <div class="card"><div class="num">01</div><h3>Contract first</h3><p>If mint, freeze, LP, or sell rights are broken, the chart is theater.</p></div>
+          <div class="card"><div class="num">02</div><h3>Callers second</h3><p>A real call has a timestamp, a position, and losers left on the timeline.</p></div>
+          <div class="card"><div class="num">03</div><h3>Size last</h3><p>Passing a scan is not a buy rating. Assume it can go to zero.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="desk">
+      <div class="wrap">
+        <h2>First-pass desk</h2>
+        <p class="sub">Paste a Solana mint or an EVM contract. The desk reads public DexScreener data and, when possible, RugCheck. It does not connect your wallet and it does not store addresses.</p>
+        <div class="desk">
+          <label for="ca">CONTRACT / MINT ADDRESS</label>
+          <div class="row">
+            <input id="ca" type="text" spellcheck="false" placeholder="So1111… or 0x…" />
+            <button id="scan-btn" type="button">Run first pass</button>
+          </div>
+          <p class="hint">Always copy the address from an explorer or the project’s own site. Never from a DM.</p>
+          <div id="result" class="result">
+            <div id="verdict" class="verdict warn"></div>
+            <div id="metrics" class="metrics"></div>
+            <div id="flags"></div>
+            <div id="tool-links" class="links"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fails">
+      <div class="wrap">
+        <h2>Instant fails</h2>
+        <p class="sub">Any one of these is enough to walk away.</p>
+        <div class="flag"><div class="tag">ABORT</div><div><h4>Mint authority still live</h4><p>If mint authority is not revoked, the deployer can print infinite supply. Instant skip.</p></div></div>
+        <div class="flag"><div class="tag">ABORT</div><div><h4>Freeze / blacklist / honeypot sell lock</h4><p>You can buy and never sell. Run Honeypot.is on EVM.</p></div></div>
+        <div class="flag"><div class="tag">ABORT</div><div><h4>Liquidity unlocked and in one wallet</h4><p>Want burned LP or a lock you can verify on a known locker — not a screenshot.</p></div></div>
+        <div class="flag"><div class="tag">ABORT</div><div><h4>Unverified contract</h4><p>Treat unverified source as hostile.</p></div></div>
+        <div class="flag"><div class="tag">ABORT</div><div><h4>Contract arrived by DM</h4><p>Official site then explorer then scanners. Never the other way around.</p></div></div>
+        <div class="flag"><div class="tag warn">STOP</div><div><h4>Top holder cluster over ~20%</h4><p>Bundled launch wallets are the modern soft rug.</p></div></div>
+        <div class="flag"><div class="tag warn">STOP</div><div><h4>Deployer has a graveyard</h4><p>If nine of ten prior tokens are dead, this is a job, not a project.</p></div></div>
+        <div class="flag"><div class="tag warn">STOP</div><div><h4>Paid caller with no personal tape</h4><p>Research the token as if the tweet did not exist.</p></div></div>
+      </div>
+    </section>
+    <section id="types">
+      <div class="wrap">
+        <h2>The scams, named clearly</h2>
+        <table>
+          <thead><tr><th>Pattern</th><th>What you see</th><th>What actually happened</th></tr></thead>
+          <tbody>
+            <tr><td>Hard rug</td><td>Candle dies in one wick</td><td>LP pulled or mint printed.</td></tr>
+            <tr><td>Soft / slow rug</td><td>Weeks of updates</td><td>Insiders drip-sell while Telegram stays loud.</td></tr>
+            <tr><td>Honeypot</td><td>Easy buys, green chart</td><td>Sells revert or tax is 99%.</td></tr>
+            <tr><td>Wallet drainer</td><td>Mint, claim, support</td><td>You signed an approval.</td></tr>
+            <tr><td>Clone contract</td><td>Same name, same logo</td><td>Different mint.</td></tr>
+            <tr><td>Paid amplification</td><td>Alpha caller posts ticker</td><td>Paid to be late liquidity.</td></tr>
+            <tr><td>Fake win screenshot</td><td>Cropped PnL</td><td>No wallet, no timestamp.</td></tr>
+            <tr><td>Lock theatre</td><td>LP locked 100 years</td><td>Lock is custom, fake, or expired.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="callers">
+      <div class="wrap grid-2">
+        <div>
+          <h2>Callers are not oracles</h2>
+          <p class="sub">A promotional amplifier is advertising, not research.</p>
+          <div class="flag"><div class="tag ok">REAL</div><div><h4>A call you can audit</h4><p>Tweet exists before the move. Wallet is public. Losing calls stay up.</p></div></div>
+          <div class="flag"><div class="tag">FAKE</div><div><h4>A promo dressed as alpha</h4><p>Deleted misses, cropped PnL, VIP funnel.</p></div></div>
+        </div>
+        <div class="card">
+          <h3>Caller tape test</h3>
+          <ol>
+            <li>Is the oldest public mention actually early?</li>
+            <li>Did they buy, or only post?</li>
+            <li>Are losers still on the timeline?</li>
+            <li>Are they paid / launching their own ticker now?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="workflow">
+      <div class="wrap">
+        <h2>Ten-minute order of work</h2>
+        <table>
+          <thead><tr><th>#</th><th>Step</th><th>Tool</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Copy contract from official site</td><td>Explorer</td></tr>
+            <tr><td>2</td><td>Mint/freeze revoked</td><td>RugCheck</td></tr>
+            <tr><td>3</td><td>Confirm you can sell</td><td>Honeypot.is</td></tr>
+            <tr><td>4</td><td>Prove LP burned or locked</td><td>Known locker</td></tr>
+            <tr><td>5</td><td>Map holders</td><td>Bubblemaps</td></tr>
+            <tr><td>6</td><td>Read deployer history</td><td>Explorer / GMGN</td></tr>
+            <tr><td>7</td><td>Then look at the chart</td><td>DexScreener</td></tr>
+            <tr><td>8</td><td>Ignore the influencer caption</td><td>Your notes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="tools">
+      <div class="wrap">
+        <h2>Official tools. Use theirs, not a clone.</h2>
+        <div class="tool"><b>RugCheck</b><span>Solana structure checks.</span><a href="https://rugcheck.xyz" target="_blank" rel="noopener">rugcheck.xyz</a></div>
+        <div class="tool"><b>TokenSniffer</b><span>EVM scam templates.</span><a href="https://tokensniffer.com" target="_blank" rel="noopener">tokensniffer.com</a></div>
+        <div class="tool"><b>Honeypot.is</b><span>Sell simulation.</span><a href="https://honeypot.is" target="_blank" rel="noopener">honeypot.is</a></div>
+        <div class="tool"><b>GoPlus</b><span>Multi-chain flags.</span><a href="https://gopluslabs.io" target="_blank" rel="noopener">gopluslabs.io</a></div>
+        <div class="tool"><b>Bubblemaps</b><span>Holder clusters.</span><a href="https://bubblemaps.io" target="_blank" rel="noopener">bubblemaps.io</a></div>
+        <div class="tool"><b>DexScreener</b><span>Discovery, not safety.</span><a href="https://dexscreener.com" target="_blank" rel="noopener">dexscreener.com</a></div>
+        <div class="tool"><b>Revoke.cash</b><span>Kill bad approvals.</span><a href="https://revoke.cash" target="_blank" rel="noopener">revoke.cash</a></div>
+        <div class="tool"><b>Chainabuse</b><span>Community reports.</span><a href="https://www.chainabuse.com" target="_blank" rel="noopener">chainabuse.com</a></div>
+      </div>
+    </section>
+    <section id="check">
+      <div class="wrap">
+        <h2>Human checklist</h2>
+        <div class="checklist" id="human-check">
+          <label class="item"><input type="checkbox" /><div>I copied the contract from the official site or explorer, not a chat.</div></label>
+          <label class="item"><input type="checkbox" /><div>Mint / owner mint is revoked or clearly capped.</div></label>
+          <label class="item"><input type="checkbox" /><div>Freeze / blacklist / pause is gone, or sell simulation passed.</div></label>
+          <label class="item"><input type="checkbox" /><div>LP is burned or locked in a locker I opened myself.</div></label>
+          <label class="item"><input type="checkbox" /><div>Top holder / cluster is not an obvious insider pile.</div></label>
+          <label class="item"><input type="checkbox" /><div>Deployer is not a serial graveyard wallet.</div></label>
+          <label class="item"><input type="checkbox" /><div>I am not buying because a caller posted the ticker.</div></label>
+          <label class="item"><input type="checkbox" /><div>I can lose this entire size and keep rent money.</div></label>
+        </div>
+        <div class="scorebox" id="human-score">Tick the boxes. The verdict updates as you go.</div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>What this site will never do</h2>
+        <div class="grid-3">
+          <div class="card"><h3>No calls</h3><p>ClearTape will not tell you the next ticker.</p></div>
+          <div class="card"><h3>No wallet connect</h3><p>Education sites that demand a signature are a red flag.</p></div>
+          <div class="card"><h3>No VIP group</h3><p>If someone DMs a ClearTape inner circle, they are a clone.</p></div>
+        </div>
+        <p class="sub" style="margin-top:28px">Public education, not financial advice. Clean tokens still go to zero.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">ClearTape · public beginner desk · no token · no affiliate funnel.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
