@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caller audit — ClearTape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><b>CLEARTAPE</b><span>CALLER AUDIT</span></a>
+      <nav>
+        <a class="n" href="index.html#desk">Scanner</a>
+        <a class="n" href="callers.html">Caller audit</a>
+        <a class="n" href="case.html">Case study</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">HANDLE FIRST · TICKER SECOND · NEVER THE CAPTION</div>
+        <h1>Audit the caller, not the vibe.</h1>
+        <p class="lede">A real early call leaves a tape. A promotional account leaves a caption. This desk builds the exact X searches you need. You still read the oldest posts yourself.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Open the tape</h2>
+        <div class="desk">
+          <label for="handle">X HANDLE</label>
+          <div class="row" style="margin-bottom:10px">
+            <input id="handle" type="text" spellcheck="false" placeholder="@someone" />
+          </div>
+          <label for="ticker">TICKER THEY ARE PUSHING (OPTIONAL)</label>
+          <div class="row">
+            <input id="ticker" type="text" spellcheck="false" placeholder="DRAFT" />
+            <button id="caller-btn" type="button">Build searches</button>
+          </div>
+          <div id="caller-links" class="links search-out"></div>
+          <p id="caller-note" class="hint"></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Four questions. Fail one, ignore the call.</h2>
+        <ol class="steps">
+          <li><strong>Was the first public mention actually early?</strong> Open Latest. Scroll to the first cashtag post. If price had already run 3x–10x, they are late liquidity.</li>
+          <li><strong>Did they buy, or only post?</strong> A cropped PnL is not a fill.</li>
+          <li><strong>Are losers still on the timeline?</strong> Deleted misses means marketer.</li>
+          <li><strong>Are they paid, or launching their own bag?</strong> VIP TG or own token means distribution, not your PnL.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">ClearTape · caller audit · no VIP group.</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
